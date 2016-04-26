@@ -51,7 +51,6 @@ public class Runner {
               System.out.println(" ------------------------"
                                  + " BlockingQueue.size() = " + blockingQueue.size());
            
-                     
             if (jobCounter++ > 10)  {
                 worker.shutdown();
                 break ;
