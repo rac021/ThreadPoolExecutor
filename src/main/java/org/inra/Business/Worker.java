@@ -37,12 +37,4 @@ public class Worker extends ThreadPoolExecutor {
     public void execute(Runnable r) {
         super.execute(r); 
     }
-
-    @Override
-    public RejectedExecutionHandler getRejectedExecutionHandler() {
-        System.out.println(".......... RejectedExecutionHandler = " );
-        return super.getRejectedExecutionHandler(); 
-    }
-    
-    
 }
