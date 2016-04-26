@@ -33,8 +33,4 @@ public class Worker extends ThreadPoolExecutor {
         System.out.println(" --- Post Execute Job " + ((Job) r).getJobName() + " // Thread_Name " + t.getName()) ;
     }
 
-    @Override
-    public void execute(Runnable r) {
-        super.execute(r); 
-    }
 }
