@@ -1,3 +1,3 @@
 
  
- <h4>ThreadPoolExecutor using BlockingQueue Example</h4>
+ <h6>Example of ThreadPoolExecutor using BlockingQueue</h6>
