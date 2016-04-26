@@ -24,13 +24,13 @@ public class Worker extends ThreadPoolExecutor {
     @Override
     protected void beforeExecute(Thread t, Runnable r) {
         super.beforeExecute(t, r) ;
-        System.out.println(" +++ Pre Execute Job " + ((Job) r).getJobName() +" // Thread_Name " + t.getName()) ;
+        System.out.println(" +++ Pre Execute Job " + ((Job) r).getJobName() + " // Thread_Name " + t.getName()) ;
     }
     
     @Override
     protected void afterExecute(Runnable r, Throwable t ) {
         super.afterExecute(r, t) ;
-        System.out.println(" --- Post Execute Job " + ((Job) r).getJobName()) ;
+        System.out.println(" --- Post Execute Job " + ((Job) r).getJobName() + " // Thread_Name " + t.getName()) ;
     }
 
     @Override
